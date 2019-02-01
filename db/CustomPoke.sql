@@ -2,13 +2,13 @@ DROP DATABASE IF EXISTS customPokemon;
 
 CREATE DATABASE customPokemon;
 
-\c customPokemon;
+\c custompokemon;
 
-DROP TABLE IF EXISTS customPokemon;
+DROP TABLE IF EXISTS customizedPokemon;
 DROP TABLE IF EXISTS movePool;
 DROP TABLE IF EXISTS pokemonPool;
 
-CREATE TABLE customPokemon(
+CREATE TABLE customizedPokemon(
     id SERIAL PRIMARY KEY,
     creator INT NOT NULL,
     pokeName TEXT NOT NULL,
@@ -32,9 +32,6 @@ CREATE TABLE pokemonPool(
     pokemonName TEXT NOT NULL,
     pokemonType1 TEXT NOT NULL,
     pokemonType2 TEXT,
-    sprite TEXT NOT NULL,
-    shinySprite TEXT NOT NULL
+    sprite TEXT,
+    shinySprite TEXT
 );
-
-
--- psql postgres
