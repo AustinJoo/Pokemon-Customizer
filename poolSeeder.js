@@ -36,6 +36,9 @@ let moveSeeder = (counter) => {
             let moveAdder = (array, counter) => {
                 if(counter < array.length){
                     let move = array[counter];
+                    move.moveName = move.moveName[0].toUpperCase() + move.moveName.slice(1);
+                    move.moveType = move.moveType[0].toUpperCase() + move.moveType.slice(1);
+                    move.damageType = move.damageType[0].toUpperCase() + move.damageType.slice(1);
                     pgsql.query(SQLq`INSERT INTO 
                         movepool (id, moveName, moveType, damageClass) 
                         VALUES   (${move.id}, ${move.moveName}, ${move.moveType}, ${move.damageType})`)
@@ -66,11 +69,16 @@ let pokemonSeeder = (counter) => {
         // data.data.types[1] ? console.log(data.data.types[1].type.name) : undefined;
         // console.log(data.data.sprites.front_default);
         // console.log(data.data.sprites.front_shiny);
+        data.data.name = data.data.name[0].toUpperCase() + data.data.name.slice(1);
+        data.data.types[0].type.name = data.data.types[0].type.name[0].toUpperCase() + data.data.types[0].type.name.slice(1);
+        if(data.data.types[1]){
+            data.data.types[1].type.name = data.data.types[1].type.name[0].toUpperCase() + data.data.types[1].type.name.slice(1);
+        }
         let pokemon = {
             id: data.data.id-1,
             pokemonName: data.data.name,
             pokemonType1: data.data.types[0].type.name,
-            pokemonType2: (data.data.types[1] ? data.data.types[1].type.name : null),
+            pokemonType2: (data.data.types[1] ? data.data.types[1].type.name : "N/A"),
             sprite: data.data.sprites.front_default,
             shinySprite:  data.data.sprites.front_shiny
         }

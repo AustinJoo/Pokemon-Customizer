@@ -1,0 +1,43 @@
+#creations{
+}
+
+.pokemonListing {
+    width: 45%;
+    height-max: 200px;
+    display: inline-block;
+    border: 1px dotted red;
+}
+
+.creatorName{
+    align-items: top;
+    text-align: center;
+    align-content: top;
+}
+
+.sprite{
+    float: right;
+    height: 250px;
+    padding-right: 30px;
+}
+
+.pokemonInfo{
+    padding-left: 20px;
+}
+
+.category{
+    padding-left: 10px;
+}
+
+ul .attacks{
+    padding-left: 500px;
+    columns: 2
+}
+
+ul .types{
+    text-align: right;
+}
+
+#attacks{
+    padding-left: 22px;
+    margin-bottom: -15px;
+}

@@ -10,8 +10,9 @@ DROP TABLE IF EXISTS pokemonPool;
 
 CREATE TABLE customizedPokemon(
     id SERIAL PRIMARY KEY,
-    creator INT NOT NULL,
+    creator TEXT NOT NULL,
     pokeName TEXT NOT NULL,
+    pokemonImage TEXT,
     pokemonType1 TEXT NOT NULL,
     pokemonType2 TEXT,
     move1 JSON NOT NULL,

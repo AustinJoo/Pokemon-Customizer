@@ -17,19 +17,22 @@ class App extends React.Component{
         this.getAllCustoms();
     }
 
-    getAllCustoms = () => {
-        Axios.get('/all')
+    getAllCustoms(){
+        Axios.get('/customs')
         .then((data) => {
-            console.log(data);
+            console.log(data.data);
+            this.setState({allPokemon: data.data});
         })
     };
 
     render(){
         return(
             <div>
-                <CreationCenter />
+                <CreationCenter allPokemon={this.getAllCustoms}/>
                 <PokemonList pokemon={this.state.allPokemon}/>
             </div>
         )
     }
 }
+
+ReactDOM.render(<App />, document.getElementById("app"))
