@@ -78,7 +78,6 @@ class CreationCenter extends React.Component{
             alert('VALID CHOICES! CREATING POKEMON NOW')
             Axios.post('/customs', {pokemon: obj})
             .then(() => {
-                // console.log('UPDATING ALL CUSTOMS')
                 this.props.allPokemon();
             })
         }
