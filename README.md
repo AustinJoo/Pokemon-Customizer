@@ -13,11 +13,11 @@ The setup of the entire application is defined below.
   - PostgreSQL for datbase
   - [Pokeapi.co's](http://pokeapi.co) external API to populate drop-down menus with options
 - **Setup steps**
-  1) Install and configure [PostgreSQL](https://www.postgresql.org/download) 
-  2) Install and configure [Node](https://nodejs.org/en/download/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-  3) Run command "git clone https://github.com/AustinJoo/Pokemon-Customizer.git" at the command line
-  4) Run command "cd Pokemon-Customizer) to enter the correct directory
-  5) Run command "sudo npm install" to install all dependencies
-  6) Run command "npm run concurrently"
-  7) Service should be running!
+ 1) Install and configure [PostgreSQL](https://www.postgresql.org/download) 
+ 2) Install and configure [Node](https://nodejs.org/en/download/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+ 3) Run command "git clone https://github.com/AustinJoo/Pokemon-Customizer.git" at the command line
+ 4) Run command "cd Pokemon-Customizer) to enter the correct directory  
+ 5) Run command "sudo npm install" to install all dependencies
+ 6) Run command "npm run concurrently"
+ 7) Service should be running!
   
