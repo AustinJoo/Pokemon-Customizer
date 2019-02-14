@@ -27,7 +27,7 @@ class MovesDropDown extends React.Component{
             <select onChange={this.props.choose}>
                 {this.state.movesList.map((move) => {
                     move.movename = move.movename[0].toUpperCase() + move.movename.slice(1);
-                    return <option value={move.id}>{move.id}) {move.movename}</option>
+                    return <option value={move.id}>{move.id+1}) {move.movename}</option>
                 })}
             </select>
         )

@@ -28,7 +28,7 @@
     padding-left: 10px;
 }
 
-ul .attacks{
+ul .attackList{
     padding-left: 500px;
     columns: 2
 }
@@ -40,4 +40,8 @@ ul .types{
 #attacks{
     padding-left: 22px;
     margin-bottom: -15px;
+}
+
+li .attackName{
+    
 }

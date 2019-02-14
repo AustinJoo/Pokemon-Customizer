@@ -16,11 +16,11 @@ const PokemonList = (props) => {
                             <li>{pokemon.pokemontype2}</li>
                         </ul>
                     <h4 class='category'>ATTACKS: </h4>
-                        <ul class='attacks'>
-                            <li>{pokemon.move1.movename}</li>
-                            <li>{pokemon.move2.movename}</li>
-                            <li>{pokemon.move3.movename}</li>
-                            <li>{pokemon.move4.movename}</li>
+                        <ul class='attackList'>
+                            <li class='attackName'>{pokemon.move1.movename}</li>
+                            <li class='attackName'>{pokemon.move2.movename}</li>
+                            <li class='attackName'>{pokemon.move3.movename}</li>
+                            <li class='attackName'>{pokemon.move4.movename}</li>
                         </ul>
                 </div>
                 </div>)
