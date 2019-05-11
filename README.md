@@ -6,6 +6,9 @@ The customizer is a full-stack application that connects a user client to a cust
 The setup of the entire application is defined below.
   - Note: This application can so far work only locally so this guide will tell you how to utilize all the code locally. I am currently working on deploying the entire project and allow access from anyone
   
+## Images
+![Step 1](PokemonCustomizerStep1.png)
+  
 ## Setup
 - **Dependencies**
   - React for front-end
