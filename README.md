@@ -7,7 +7,7 @@ The setup of the entire application is defined below.
   - Note: This application can so far work only locally so this guide will tell you how to utilize all the code locally. I am currently working on deploying the entire project and allow access from anyone
   
 ## Images
-![Step 1](file:///Users/AustinJoo/Desktop/PokemonCustomizerStep1.png)
+![Step 1](Users/AustinJoo/Desktop/PokemonCustomizerStep1.png)
   
 ## Setup
 - **Dependencies**
